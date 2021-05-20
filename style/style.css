@@ -1,0 +1,65 @@
+.body-container {
+    font-family: sans-serif;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.img {
+    width: 100%;
+    height: auto;
+}
+.header {
+    display: block;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+.card {
+    display: flex;
+    margin: 10px 5px;
+    padding: 10px;
+    border: 1px black solid;
+    width: 70%;
+}
+.card__img {
+    background-image: url(https://mobile-review.com/news/wp-content/uploads/yaPhone3_1.jpg);
+    width: 45%;
+    padding-top: 25%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card__element-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.card__element-wrap2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: flex-end;
+}
+.card__name {
+    margin: 0 0 10px 0;
+    font-weight: bolder;
+}
+.card__price {
+    font-weight: bolder;
+} 
+.card__delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    width: 80px;
+    height: 50px;
+    border-radius: 5px;
+}
