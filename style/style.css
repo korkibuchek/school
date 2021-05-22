@@ -1,0 +1,48 @@
+.wrap {
+    max-width: 900px;
+    font-family: serif, Arial, Helvetica;
+    margin: 0 auto;
+}
+.wrap__heading {
+    text-align: center;
+
+}
+.wrap__elm {
+    border: 1px solid black;
+    display: inline-block;
+    max-width: 500px;
+    height: 150px;
+    margin: 15px;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    
+    
+}
+.wrap__elm-img {
+    background: url(../image/apple.jpg) center / cover no-repeat;
+    width: 30%;
+    height: auto;
+    padding-top: 30%;
+    float: left;
+    margin-right: 5px;
+}
+.wrap__elm-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px;
+}
+.wrap__elm-desc {
+    margin: 10px 0px;
+}
+.wrap__elm-bth {
+    color: white;
+    background-color: black;
+    height: 40px;
+    position: absolute; 
+    bottom: 10px;
+    right: 10px;  
+   
+
+}
