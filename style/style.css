@@ -1,0 +1,19 @@
+.card {
+    border: 1px solid black;
+    padding: 5px;
+    width: calc((100% / 3) - 2%);
+    display: inline-block;
+    margin: 1%;
+    box-sizing: border-box;
+}
+.card__img {
+    width: 100%;
+}
+.card__text-wrap {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+body {
+    font-size: 0;
+}
