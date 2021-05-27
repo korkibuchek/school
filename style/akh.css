@@ -1,0 +1,69 @@
+@font-face{
+    font-family:"Geometria";
+    src: url(../fonts/Geometria/Geometria.otf);
+}
+@font-face{
+    font-family:"Geometria";
+    src: url(../fonts/Geometria/Geometria-Bold.otf);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1366px;
+    height: 61px;
+    background-color: #737373;
+
+}
+.header__logo{
+    width: 129px;
+    height: 61px;
+    background-image: url(../image/logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 106px;
+}
+.header__sale{
+    width: 307px;
+    font-family: "Geometria-Bold", sans-serif ; 
+    color: white;
+    font-size: 12px;
+    margin-left: 286px;
+}
+.header__service{
+    color: white;
+    font-family: "Geometria", sans-serif;
+    font-size: 12px;
+    border-right: white .5px solid;
+    padding-right: 15px;
+
+}
+.header__personal-account{
+    color: white;
+    font-family: "Geometria", sans-serif;
+    font-size: 12px;
+    font-style: normal;
+}
+.header__icons-like{
+    width: 45px;
+    height: 45px;
+    margin-left: 95px;
+    background-image: url(../image/like.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header__icons-bag{
+    width: 45px;
+    height: 45px;
+    margin-right: 117px;
+    background-image: url(../image/bag.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
