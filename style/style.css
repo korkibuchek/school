@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Geometria" ;
+    src:url(../font/Geometria.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main {
+    margin: 0 auto;
+    overflow: hidden;
+   
+
+}
+.header {
+    display: flex;
+    max-width: 1360px;
+    height: 60px;
+    background-color: #737373;
+    align-items: center;
+    justify-content: space-around;
+}
+.header__logo {
+}
+     
+.header__item {
+    font-family: "Geometria", Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 12pt;
+    word-spacing: 3pt;
+}
+
+.header__item-el {
+    margin: 0 35px 0 0;
+}
+.header__item-el_size {
+    font-size: 10pt;
+}
+.header__item a {
+    text-decoration: none;
+    color: #ffffff;
+}
