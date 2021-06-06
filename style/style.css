@@ -1,41 +1,89 @@
+@import url(/school/style/reset.css); 
 @font-face {
     font-family: "Geometria" ;
     src:url(../font/Geometria.otf);
     font-weight: normal;
     font-style: normal;
 }
-
-.main {
-    margin: 0 auto;
+@font-face {
+    font-family: "Geometria-medium" ;
+    src:url(../font/Geometria-Medium.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+.wraper {
+    width: 100%;
+    min-height: 100%;
     overflow: hidden;
-   
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
 
+}
+._container {
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 20px;
+   
 }
 .header {
+    font-family: "Geometria", Arial, Helvetica, sans-serif;;
+   
+}
+.header-container {
     display: flex;
-    max-width: 1360px;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-top {
     height: 60px;
     background-color: #737373;
-    align-items: center;
-    justify-content: space-around;
-}
-.header__logo {
-}
-     
-.header__item {
-    font-family: "Geometria", Arial, Helvetica, sans-serif;
     color: #ffffff;
     font-size: 12pt;
-    word-spacing: 3pt;
+    word-spacing: 1pt;
+     
 }
 
-.header__item-el {
-    margin: 0 35px 0 0;
+.header-top__user-discount a {
+    color: #ffffff;
+    
 }
-.header__item-el_size {
+
+.header-top__user-el {
+    margin: 0 0 0 35px;
+}
+.header-top__user-el_border {
+    border-left: 1px solid #828282;
+    padding-left: 16px;
+    margin-left: 18px;
+}
+.header-top__user-el_size {
     font-size: 10pt;
 }
-.header__item a {
-    text-decoration: none;
-    color: #ffffff;
+.header-middle {
+    margin: 35px 0;
+}
+.header-middle__link a {
+    color: #3a3a3a ;
+}
+
+.header-middle__searsh {
+    font-family: "Geometria-medium" ;
+    color: #3a3a3a;
+    border: solid 1px #737373;
+    padding: 15px 60px;
+    text-align: center;
+}
+.hader-bottom {
+    padding: 20px 0;
+}
+.header-bottom__li a {
+    color: #3a3a3a;
+
+   
+}
+
+.content {
+    
 }
