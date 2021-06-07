@@ -1,19 +1,215 @@
-.card {
-    border: 1px solid black;
-    padding: 5px;
-    width: calc((100% / 3) - 2%);
-    display: inline-block;
-    margin: 1%;
-    box-sizing: border-box;
+@font-face {
+    font-family: Geometria;
+    src: url(/fonts/Geometria.otf);
 }
-.card__img {
-    width: 100%;
+@font-face {
+    font-family: Geometria-Medium;
+    src: url(/fonts/Geometria-Medium.otf);
 }
-.card__text-wrap {
+@font-face {
+    font-family: Times New Roman Cyr Italic;
+    src: url(/fonts/Times\ New\ Roman\ Cyr\ Italic.ttf);
+}
+@font-face {
+    font-family: Geometria-Bold;
+    src: url(/fonts/Geometria-Bold.otf);
+}
+
+.body {
+    margin: 0;
+    font-family: Geometria;
+    font-size: 12pt;
+}
+.header-wrap {
+    background-color: #737373;
+}
+.page-header {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    
+}
+.upper-logo {
+    display: flex;
+    margin: 0 0 0 5px;
+}
+.offer {
+    color: white;
+}
+.offer-link {
+    font-weight: bold;
+    color: white;
+    margin: 0 0 0 6px;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu__service {
+    padding: 0 16px 0 0;
+    border-right: 1px solid white;
+    color: white;
+}
+.menu__cabinet {
+    white-space: nowrap;
+    margin: 0 0 0 16px;
+    color: white;
+}
+.menu__favorites {
+    margin: 0px 8px 0px 36px;
+}
+.menu__favorites-total {
+    font-size: 10pt;
+    color: white;
+}
+.menu__bag {
+    margin-left: 32px;
+}
+.menu__bag-total {
+    margin: 0 5px 0 6px;
+    font-size: 10pt;
+    color: white;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+.search-and-location {
+    display: flex;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.location {
+    display: flex;
+    flex-wrap: nowrap;
+    color: #3a3a3a;
+}
+.location__geo-icon {
+    margin: 0 4px 0 5px;
+}
+.location__city {
+    padding: 0 16px 0 0;
+    border-right: 1px solid black;
+}
+.location__store {
+    margin: 0 0 0 16px;
+}
+.logo {
+    margin: 35px 0;
+}
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 40px;
+    font-family: Geometria-Medium;
+    color:  #737373;
+    border: 1px solid  #3a3a3a;
+    margin: 0 5px 0 0;
+}
+.search-icon {
+    margin: 0 10px 0 0;
+}
+.nav-wrap {
+    border-bottom: 1px solid #e6e7e7;
+    padding: 0 0 27px 0;
+}
+.navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 5px;
+    color: #3a3a3a;
+}
+.main {
+max-width: 1200px;
+margin: 66px auto;
+display: flex;
+flex-wrap: nowrap;
+justify-content: space-between;
+}
+.basket {
+    max-width: 723px;
+    width: 65%;
+}
+.basket-heading {
     display: flex;
     justify-content: space-between;
-    font-size: 16px;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid #e6e7e7;
+    color: #3a3a3a;
+    box-sizing: border-box;
+
 }
-body {
-    font-size: 0;
+.basket-heading-wrap {
+    display: flex;
+    align-items: flex-end;
+}
+.basket-heading-wrap__quantity {
+    margin: 0 40px 0 0;
+}
+.basket-heading-wrap__value {
+    margin: 0 0 0 40px;
+}
+.basket-heading__name {
+    font-family: Times New Roman Cyr Italic;
+    font-size: 30pt;
+}
+.order {
+    max-width: 343px;
+    border: 1px solid #f8f8f8;
+    background-color: #f8f8f8;
+    margin: 0 5px;
+}
+.order-offer {
+    color: #3a3a3a;
+}
+.promo {
+    width: 100%;
+    color: #737373;
+    background-color: white;
+    border: 1px solid #f8f8f8;
+    padding: 15px 0 15px 15px;
+    box-sizing: border-box;
+}
+span {
+    border-bottom: 1px dashed #737373;
+}
+.calculation {
+    margin: 28px 16px 0 16px;
+    border-bottom: 1px solid #737373;
+}
+.value, .discount, .delivery {
+    display: flex;
+    justify-content: space-between;
+}
+.value__name, .value__total, .discount__name, .discount__total, .delivery__name, .delivery__total {
+    margin: 0 0 14px 0;
+    color: #3a3a3a;
+}
+.total {
+    font-family: Geometria-Bold;
+    font-size: 14pt;
+    text-align: right;
+    margin: 14px 16px 28px 0;
+}
+.order__button {
+    width: calc(100% - 34px);
+    background-color: #4d806e;
+    margin: 0 auto;
+    border: none;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+.order-offer {
+    margin: 28px 40px 26px 40px;
 }
