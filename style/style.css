@@ -1,4 +1,4 @@
-@import url(/school/style/reset.css); 
+@import url(reset.css); 
 @font-face {
     font-family: "Geometria" ;
     src:url(../font/Geometria.otf);
@@ -11,6 +11,18 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "Geometria-Bold" ;
+    src:url(../font/Geometria-Bold.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Geometria-Italic" ;
+    src:url(../font/Geometria-Italic.otf);
+    font-weight: normal;
+    font-style: normal;
+}
 .wraper {
     width: 100%;
     min-height: 100%;
@@ -18,72 +30,277 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    
+}
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+}
+.header-top {
+    background-color: #737373;
+    position: relative;
+}
+.header-top__wrap {
+    height: 58px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font: .75em/.94em "Geometria";
+    color: #efefef;
+}
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.header-top__item_logo{
+    width: 130px;
+    height: 100%;
+    padding: 0 22px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.header-top__link {
+    color: #efefef;
+    font-weight: bold;
 
 }
-._container {
-    max-width: 1230px;
-    margin: 0 auto;
-    padding: 0 20px;
-   
+.header-top__item_center  {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
-.header {
-    font-family: "Geometria", Arial, Helvetica, sans-serif;;
-   
+.header-top__text-uppercase {
+    text-transform: uppercase;
+
 }
-.header-container {
+.header-top__item_flex {
+    display: flex;
+    align-items: center;
+}
+.header-top__personal {
+    margin-right: 35px;
+}
+.header-top__data {
+    vertical-align: middle;
+    padding: 0 15px;
+    line-height: 1.25em;
+    color: #efefef;
+}
+.header-top__data:first-child {
+    border-right: 1px solid #828282;
+}
+
+.header-top__set-el {
+    display: inline-block;
+}
+.header-top__set-el:first-child {
+    margin-right: 30px;
+}
+.icon-block {
+    display: flex;
+    align-items: center;
+}
+.icon-block__img {
+    width: 23px;
+    height: 22px;
+    background: center / contain no-repeat ;
+}
+.icon-block_heart .icon-block__img {
+    background-image: url(../image/icon/heart_icon.png);
+
+}
+.icon-block_bag .icon-block__img {
+    background-image: url(../image/icon/bag_icon.png);
+}
+.icon-block_heart.icon-block_active .icon-block__img {
+    background-image: url(../image/icon/heart_active.png);
+}
+.icon-block_bag.icon-block_active .icon-block__img {
+    background-image: url(../image/icon/bag_active.png);
+}
+.icon-block__numeric {
+    font: .625em/.94 "Geometria";
+    color: #efefef;
+    margin-left: 9px;
+}
+.header-middle {
+    position: relative;
+}
+.header-middle__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 34px 0;
+
+}
+.header-middle__location {
+    display: flex;
+    align-items: center;
+}
+.header-middle__link_right {
+    margin-right: 34px;
+}
+
+.header-middle__geo {
+    width: 12px;
+    height: 14px;
+    margin-right: 9px;
+}
+.header-middle__link {
+    font: .75em/.94em "Geometria";
+    color: #3a3a3a;
+}
+
+.header-middle__logo {
+    width: 184px;
+    height: 52px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.input:focus + .input-group__search  {
+    color: transparent;
+} 
+.input:focus + .input-group__search .input-group__text::before {
+    display: none;
+}
+.input-group {
+    color: #3a3a3a;
+    position: relative;
+}
+
+.input-group__item {
+    width: 200px;
+    height: 40px;
+    border: 1px solid #737373;
+    text-align: center;
+
+}
+
+.input-group__text {
+    color: inherit;
+    font: .75em/.94em "Geometria-medium"
+}
+.input-group__text::before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    margin-right: 10px;
+    background: url(../image/icon/search.png) center / contain no-repeat;
+    
+}
+.input-group__search {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-bottom__wrap {
+    padding: 22px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.header-top {
-    height: 60px;
-    background-color: #737373;
-    color: #ffffff;
-    font-size: 12pt;
-    word-spacing: 1pt;
-     
+.header-bottom__item {
+    flex: 0 1 500px;
+    display: flex;
+    justify-content: space-between;
 }
-
-.header-top__user-discount a {
-    color: #ffffff;
-    
-}
-
-.header-top__user-el {
-    margin: 0 0 0 35px;
-}
-.header-top__user-el_border {
-    border-left: 1px solid #828282;
-    padding-left: 16px;
-    margin-left: 18px;
-}
-.header-top__user-el_size {
-    font-size: 10pt;
-}
-.header-middle {
-    margin: 35px 0;
-}
-.header-middle__link a {
-    color: #3a3a3a ;
-}
-
-.header-middle__searsh {
-    font-family: "Geometria-medium" ;
-    color: #3a3a3a;
-    border: solid 1px #737373;
-    padding: 15px 60px;
-    text-align: center;
-}
-.hader-bottom {
-    padding: 20px 0;
-}
-.header-bottom__li a {
+.header-bottom__el {
+    font: .75em/.94em "Geometria";
     color: #3a3a3a;
 
-   
 }
 
 .content {
+    flex: 1 1 auto;
+}
+
+.foter-top__wrap {
+    padding: 50px 0;
+    font-family: "Geometria-Italic";
+    color: #3a3a3a;
+    text-align: center;
+    border-bottom: 1px solid #3a3a3a;
+}
+.foter-top__text {
+    font-size: 1.875em;
+
+}
+.foter-top__phone {
+    font-size: .875em;
+    margin-top: 28px;
+}
+.foter-top__phone span:first-child {
+    margin-right: 28px;
+}
+.foter-bottom {
+    margin: 95px 0 52px 0;
+
+}
+.foter-bottom__wrap {
+    display: flex;
+    justify-content: space-between;
+    color: #3a3a3a;
+}
+
+.foter-bottom__item {
+    display: flex;
+    justify-content: space-around;
+    flex: 0 1 35%;
     
 }
+ .foter-bottom__list, .foter-bottom__info {
+    flex: 0 1 25%;
+    
+} 
+.foter-bottom__heading {
+    font: .75em "Geometria-Bold";
+}
+.foter-bottom__heading li {
+    padding-top: 20px;
+}
+.foter-bottom__li {
+    font: .75em/.94em "Geometria";
+    color: #3a3a3a;
+}
+.foter-bottom {
+    position: relative;
+
+}
+.foter-bottom__input-gpoup {
+    width: 200px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+}
+.foter-bottom__heading_margin {
+    margin-bottom: 20px;
+}
+
+
+.foter-bottom__social {
+    margin-top: 13px;
+}
+.foter-bottom__social a {
+    margin-right: 24px;
+}
+.foter-bottom__card {
+    width: 194px;
+    height: 50px;
+}
+.foter-bottom__heading_top {
+    margin-top: 58px;
+}
+
+.foter-bottom__link {
+    color: #3a3a3a;
+    border-bottom: 1px solid #acacac ;
+}
+
+
