@@ -23,6 +23,12 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: "Geometria-Light" ;
+    src:url(../font/Geometria-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
 .wraper {
     width: 100%;
     min-height: 100%;
@@ -52,7 +58,7 @@
     width: 100%;
     height: auto;
 }
-.header-top__item_logo{
+.header-top__item_logo {
     width: 130px;
     height: 100%;
     padding: 0 22px;
@@ -198,6 +204,9 @@
     top: 50%;
     transform: translate(-50%, -50%);
 }
+.header-bottom {
+    margin: 0 0 40px 0;
+}
 .header-bottom__wrap {
     padding: 22px 0;
     display: flex;
@@ -217,61 +226,286 @@
 
 .content {
     flex: 1 1 auto;
+    padding: 0 10px;
+}
+.content__wrap {
+    position: relative;
 }
 
-.foter-top__wrap {
+.content__title {
+    padding: 40px 10px 20px 10px;
+    margin: 0 0 22px 0;
+    max-width: 745px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d9d9;
+
+
+}
+.content__title-el {
+    font: .75em/.94em "Geometria-Light" ;
+    color: #3a3a3a;
+
+}
+.content__title-cart {
+    font: 1.875em "Geometria-Italic" ;
+}
+.content__title-el_flex {
+    flex: 0 1 542px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content__card {
+    max-width: 745px;
+    font: .75em/.94em "Geometria-Light";
+    color: #3a3a3a;
+    margin-bottom: 50px;
+    display: flex;
+    padding: 0 10px 30px 10px;
+
+}
+.content__card-img {
+    background: url(../image/blouse.png) center / contain no-repeat;
+    width: 95px;
+    height: 138px;
+}
+.content__card-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex: 1 1 auto;
+    margin: 0 0 0 24px;
+
+
+}
+.content__card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content__card-leiba {
+    text-transform: uppercase;
+    font-family: "Geometria-medium" ;
+    margin: 0 0 14px 0;
+}
+
+.content__card-color {
+    margin-bottom: 16px;
+}
+.content__card-color span:first-child {
+    font-family: "Geometria-Bold" ;
+    margin-right: 16px;
+
+}
+.content__card-size span:first-child {
+    font-family: "Geometria-Bold" ;
+    margin-right: 16px;
+
+}
+.content__card-size span:nth-child(3) {
+    padding-right: 6px;
+    border-right: 1px solid #444444;
+    margin-right: 5px;
+
+}
+.content__card-amount div {
+    text-align: end;
+    margin-bottom: 10px;
+}
+
+.icon-block_favorits .icon-block__img {
+    background-image: url(../image/icon/favorits.png);
+}
+.icon-block_red .icon-block__img:hover {
+    background-image: url(../image/icon/favorits_red.png);
+}
+.icon-block__del {
+    margin: 0 0 0 22px;
+
+}
+.content-purchases {
+    padding: 10px 0;
+    font: .6875em/.94em "Geometria-Light";
+    color: #3a3a3a;
+    display: flex;
+    max-width: 342px;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 40px;
+    right: 0;
+}
+.content-purchases__el {
+    flex: 0 1 100%;
+    
+}
+.content-purchases__el:first-child {
+    margin: 0 0 14px 17px;
+}
+.content-purchases__promo {
+    color: #3a3a3a;
+    border-bottom: 1px dotted #3a3a3a;
+}
+.content-purchases__el-flex {
+    display: flex;
+    flex-direction: column;
+    background-color: #f8f8f8;
+    padding: 28px 17px;
+}
+
+.content-purchases__cost,.content-purchases__discount,.content-purchases__delivery {
+    padding: 0 0 14px 0;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.content-purchases__total {
+    text-transform: uppercase;
+    font-family: "Geometria-Bold";
+}
+.content-purchases__delivery {
+    border-bottom: 1px solid #e6e7e7;
+}
+.content-purchases__total {
+    margin: 14px 0 28px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+.content-purchases__total div {
+    margin-left: 12px;
+}
+.content-purchases__offer {
+    margin: 28px 0 0 0;
+    text-align: center;
+    flex: 0 1 30%;
+}
+.content-purchases__offer a {
+    color: #3a3a3a;
+    border-bottom: 1px solid #3a3a3a ;
+}
+.bth {
+    width: 310px;
+    height: 40px;
+}
+.bth_green {
+    background-color: #4d806e;
+    color: #ffff;
+
+}
+.content__reference {
+    text-align: center;
+    margin: 30px 0;
+    padding: 20px 0;
+}
+.content__reference-el {
+    font: .75em/.94em "Geometria";
+    color: #3a3a3a;
+    margin-bottom: 40px;
+}
+.content__reference-el_italic {
+    font-family: "Geometria-Italic";
+    font-size: 1.5em;
+}
+.content__reference-el_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icon-block__img_left {
+    background-image: url(../image/icon/left_arrow.png);
+
+}
+.content__reference-product {
+    display: flex;
+    flex-direction: column;
+    flex: 0 1 15%;
+    
+}
+.content__reference-img {
+    padding-top: 120%;
+    background: center / contain no-repeat;
+}
+.content__reference-img_dress {
+    background-image: url(../image/dress.png);
+}
+.content__reference-img_skirt {
+    background-image: url(../image/skirt.png);
+}
+.content__reference-img_jeans{
+    background-image: url(../image/jeans.png);
+}
+.content__reference-img_pants{
+    background-image: url(../image/pants.png);
+}
+.content__reference-img_skirt1{
+    background-image: url(../image/skirt1.png);
+}
+.icon-block__img_right {
+    background-image: url(../image/icon/right_arrow.png);
+}
+.content__reference-text {
+    margin: 0 0 14px 0;
+}
+.bth_bottom {
+    font-family: "Geometria-Light";
+    border: 1px solid #3a3a3a;
+    margin-top: 56px;
+}
+.footer-top__wrap {
     padding: 50px 0;
     font-family: "Geometria-Italic";
     color: #3a3a3a;
     text-align: center;
     border-bottom: 1px solid #3a3a3a;
 }
-.foter-top__text {
+.footer-top__text {
     font-size: 1.875em;
 
 }
-.foter-top__phone {
+.footer-top__phone {
     font-size: .875em;
     margin-top: 28px;
 }
-.foter-top__phone span:first-child {
+.footer-top__phone span:first-child {
     margin-right: 28px;
 }
-.foter-bottom {
+.footer-bottom {
     margin: 95px 0 52px 0;
 
 }
-.foter-bottom__wrap {
+.footer-bottom__wrap {
     display: flex;
     justify-content: space-between;
     color: #3a3a3a;
 }
 
-.foter-bottom__item {
+.footer-bottom__item {
     display: flex;
     justify-content: space-around;
     flex: 0 1 35%;
     
 }
- .foter-bottom__list, .foter-bottom__info {
-    flex: 0 1 25%;
+.footer-bottom__list, .footer-bottom__info {
+    flex: 0 1 30%;
     
 } 
-.foter-bottom__heading {
-    font: .75em "Geometria-Bold";
+.footer-bottom__heading {
+    font: .75em/.94em "Geometria-Bold";
 }
-.foter-bottom__heading li {
+.footer-bottom__heading li {
     padding-top: 20px;
 }
-.foter-bottom__li {
-    font: .75em/.94em "Geometria";
+.footer-bottom__li {
+    font-family:  "Geometria";
     color: #3a3a3a;
 }
-.foter-bottom {
+.footer-bottom {
     position: relative;
 
 }
-.foter-bottom__input-gpoup {
+.footer-bottom__input-gpoup {
     width: 200px;
     position: absolute;
     left: 50%;
@@ -279,28 +513,27 @@
     text-align: center;
 
 }
-.foter-bottom__heading_margin {
+.footer-bottom__heading_margin {
     margin-bottom: 20px;
 }
 
 
-.foter-bottom__social {
+.footer-bottom__social {
     margin-top: 13px;
 }
-.foter-bottom__social a {
+.footer-bottom__social a {
     margin-right: 24px;
 }
-.foter-bottom__card {
+.footer-bottom__card {
     width: 194px;
     height: 50px;
 }
-.foter-bottom__heading_top {
+.footer-bottom__heading_top {
     margin-top: 58px;
 }
 
-.foter-bottom__link {
+.footer-bottom__link {
     color: #3a3a3a;
     border-bottom: 1px solid #acacac ;
 }
-
 
