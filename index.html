@@ -13,213 +13,157 @@
 <body>
     <div class="wraper">
         <header class="header">
-            <div class="header-top">
-                <div class="header-top__wrap container">
-                    <div class="header-top__item header-top__item_logo">
-                        <img src="image/logo_top.png" alt="" class="image">
-                    </div>
-                    <div class="header-top__item header-top__item_center">
-                        <span class="header-top__text-uppercase">СКИДКА 20% НА ЛЕТНИЕ БЛУЗЫ.</span>
-                        <a href="" class="header-top__link">ПОДРОБНЕЕ</a>
-                    </div>
-                    <div class="header-top__item header-top__item_flex">
-                        <!-- для адаптива -->
-                        <div class="header-top__block">
-                            <div class="header-top__personal">
-                                <a href="" class="header-top__data">Сервис</a>
-                                <a href="" class="header-top__data">Личный кабинет</a>
-                            </div>
-                            <div class="header-top__search"></div>
+            <div class="header-bg"></div>
+            <div class="header__wrap">
+                <div class="header-top__logo">
+                    <div class="header-top__image"></div>
+                </div>
+                <div class="header-top__center">
+                    <span class="header-top__text">СКИДКА 20% НА ЛЕТНИЕ БЛУЗЫ.</span>
+                    <a href="" class="header-top__link">ПОДРОБНЕЕ</a>
+                </div>
+                <div class="header-top__personal header-top__burger">
+                    <a href="" class="header-top__data">Сервис</a>
+                    <a href="" class="header-top__data">Личный кабинет</a>
+                </div>
+                <div class="header-top__set">
+                    <div class="header-top__set-el">
+                        <div class="icon-block icon-block_active icon-block_heart">
+                            <div class="icon-block__img"></div>
+                            <div class="icon-block__numeric">0</div>
                         </div>
-                        <!-- для адаптива -->
-                        <div class="header-top__logo">
-                            <img src="image/logo_top1.png" alt="" class="image">
-                        </div>
-                        <div class="header-top__set">
-                            <div class="header-top__set-el">
-                                <div class="icon-block icon-block_active icon-block_heart">
-                                    <div class="icon-block__img"></div>
-                                    <div class="icon-block__numeric">0</div>
-                                </div>
-                            </div>
-                            <div class="header-top__set-el">
-                                <div class="icon-block icon-block_active icon-block_bag">
-                                    <div class="icon-block__img"></div>
-                                    <div class="icon-block__numeric">2</div>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="header-top__set-el">
+                        <div class="icon-block icon-block_active icon-block_bag">
+                            <div class="icon-block__img"></div>
+                            <div class="icon-block__numeric">2</div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="header-middle">
-                <div class="header-middle__wrap container">
-                    <div class="location__group">
-                        <div class="location__geo">
-                            <img src="image/icon/geo.png" alt="" class="image">
-                        </div>
-                        <a href="" class="location__link location__link_right">г.Москва.</a>
-                        <a href="" class="location__link">Магазин в москве</a>
+                <div class="location__group">
+                    <div class="location__geo">
+                        <img src="image/icon/geo.png" alt="" class="image">
                     </div>
-                    <div class="header-middle__logo">
-                        <img src="image/logo_middle.png" alt="" class="image">
-                    </div>
-                    <div class="input-group">
-                        <input type="text" class="input-group__item input" id="input__search">
-                        <label for="input__search" class="input-group__search">
-                            <span class="input-group__text">ПОИСК</span>
-                        </label>
-                    </div>
+                    <a href="" class="location__link location__link_right">г.Москва.</a>
+                    <a href="" class="location__link">Магазин в москве</a>
                 </div>
-            </div>
-            <div class="header-bottom">
-                <div class="header-bottom__wrap container">
-                    <div class="header-bottom__item">
-                        <a href="" class="header-bottom__el">НОВИНКИ</a>
-                        <a href="" class="header-bottom__el">ОДЕЖДА</a>
-                        <a href="" class="header-bottom__el">ОБУВЬ</a>
-                    </div>
-                    <div class="header-bottom__item">
-                        <a href="" class="header-bottom__el">СУМКИ</a>
-                        <a href="" class="header-bottom__el">АКСЕССУАРЫ</a>
-                        <a href="" class="header-bottom__el">РАСПРОДАЖА</a>
-                    </div>
+                <div class="header-middle__logo">
+                    <img src="image/logo_middle.png" alt="" class="image">
+                </div>
+                <div class="input-group input-group_adaptation">
+                    <input type="text" class="input-group__item input" id="input__search">
+                    <label for="input__search" class="input-group__search">
+                        <span class="input-group__text">ПОИСК</span>
+                    </label>
+                </div>
+                <div class="header-bottom">
+                    <a href="" class="header-bottom__el">НОВИНКИ</a>
+                    <a href="" class="header-bottom__el">ОДЕЖДА</a>
+                    <a href="" class="header-bottom__el">ОБУВЬ</a>
+                    <a href="" class="header-bottom__el">СУМКИ</a>
+                    <a href="" class="header-bottom__el">АКСЕССУАРЫ</a>
+                    <a href="" class="header-bottom__el">РАСПРОДАЖА</a>
                 </div>
             </div>
         </header>
-        <div class="content">
-            <div class="content__wrap container">
+        <div class="content container ">
+            <div class="content__wrap">
                 <div class="content__title">
-                    <div class="content__title-el content__title-el_flex">
-                        <div class="content__title-cart">Корзина</div>
-                        <div class="content__title-amount">Количество</div>
-                    </div>
-                    <div class="content__title-el content__title-amount">Стоимость</div>
+                    <div class="content__title-cart">Корзина</div>
+                    <div class="content__title-amount">Количество</div>
+                    <div class="content__title-cost">Стоимость</div>
                 </div>
-                <div class="content__card">
-                    <div class="content__card-img"></div>
-                    <div class="content__card-wrap">
-                        <div class="content__card-item">
-                            <div class="content__card-info">
-                                <div class="content__card-leiba">AKHMADULINA DREAMS</div>
-                                <div class="content__card-name">Брюки с принтом "Цветущий папоротник"</div>
+                <div class="content__card-block">
+                    <div class="content__card">
+                        <div class="content__card-img"></div>
+                        <div class="content__card-info">
+                            <div class="content__card-leiba">AKHMADULINA DREAMS</div>
+                            <div class="content__card-name">Брюки с принтом "Цветущий папоротник"</div>
+                        </div>
+                        <div class="content__card-info content__card-info_position">
+                            <div class="content__card-color">
+                                <span class="content__card-color__el">ЦВЕТ</span>
+                                <span>Цветущий папоротник</span>
                             </div>
-                            <!-- для адаптива -->
-                            <div class="content__card-rebate">6999 ₽</div>
-                            <!-- для адаптива -->
-                            <div class="content__card-info">
-                                <div class="content__card-color">
-                                    <span>ЦВЕТ</span>
-                                    <span>Цветущий папоротник</span>
-                                </div>
-                                <div class="content__card-size">
-                                    <span>РАЗМЕР</span>
-                                    <span>RU</span>
-                                    <span>46</span>
-                                    <span>30</span>
-                                </div>
+                            <div class="content__card-size">
+                                <span class="content__card-size__el">РАЗМЕР</span>
+                                <span>RU</span>
+                                <span class="content__card-size__number">46</span>
+                                <span>30</span>
                             </div>
                         </div>
-                        <div class="conetnt__card-item">
-                            <div class="content__card-quantity">
-                                <span>-</span>
-                                <span>1</span>
-                                <span>+</span>
-                            </div>
+                        <div class="content__card-quantity">
+                            <span>-</span>
+                            <span>1</span>
+                            <span>+</span>
                         </div>
-                        <div class="content__card-item">
-                            <div class="content__card-amount">
-                                <div>6999 ₽</div>
-                                <span>6999 ₽</span>
-                                <span>x</span>
-                                <span>1 шт</span>
-                            </div>
-                            <div class="icon-block icon-block_favorits icon-block_red icon-block_none">
-                                <div class="icon-block__img"></div>
-                                <div class="icon-block__del">Удалить</div>
-                            </div>
-                            <!-- для адаптива -->
-                            <div class="content__card-bth">
-                                <button>Добавить в избранное</button>
-                            </div>
-                            <!-- для адаптива -->
+                        <span class="content__card-sum">6999 ₽</span>
+                        <div class="content__card-amount">
+                            <span>6999 ₽</span>
+                            <span>x</span>
+                            <span>1 шт</span>
                         </div>
+                        <!-- для адаптива -->
+                        <button class="button__select button__select_active">
+                            <div class="button__select-img"></div>
+                            <span class="button__select-text">Добавить в избраное</span>
+                        </button>
+                        <button class="button__del">
+                            <span class="button__del-img"></span>
+                            <span class="button__del-text">Удалить</span>
+                        </button>
+                        <!-- для адаптива -->
                     </div>
-                    <!-- для адаптива -->
-                    <div class="content__card-close"></div>
-                    <!-- для адаптива -->
-                </div>
-                <div class="content__card">
-                    <div class="content__card-img"></div>
-                    <div class="content__card-wrap">
-                        <div class="content__card-item">
-                            <div class="content__card-info">
-                                <div class="content__card-leiba">AKHMADULINA DREAMS</div>
-                                <div class="content__card-name">Брюки с принтом "Цветущий папоротник"</div>
+                    <div class="content__card">
+                        <div class="content__card-img"></div>
+                        <div class="content__card-info">
+                            <div class="content__card-leiba">AKHMADULINA DREAMS</div>
+                            <div class="content__card-name">Брюки с принтом "Цветущий папоротник"</div>
+                        </div>
+                        <div class="content__card-info content__card-info_position">
+                            <div class="content__card-color">
+                                <span class="content__card-color__el">ЦВЕТ</span>
+                                <span>Цветущий папоротник</span>
                             </div>
-                            <!-- для адаптива -->
-                            <div class="content__card-rebate">6999 ₽</div>
-                            <!-- для адаптива -->
-                            <div class="content__card-info">
-                                <div class="content__card-color">
-                                    <span>ЦВЕТ</span>
-                                    <span>Цветущий папоротник</span>
-                                </div>
-                                <div class="content__card-size">
-                                    <span>РАЗМЕР</span>
-                                    <span>RU</span>
-                                    <span>46</span>
-                                    <span>30</span>
-                                </div>
+                            <div class="content__card-size">
+                                <span class="content__card-size__el">РАЗМЕР</span>
+                                <span>RU</span>
+                                <span class="content__card-size__number">46</span>
+                                <span>30</span>
                             </div>
                         </div>
-                        <div class="conetnt__card-item">
-                            <div class="content__card-quantity">
-                                <span>-</span>
-                                <span>1</span>
-                                <span>+</span>
-                            </div>
+                        <div class="content__card-quantity">
+                            <span>-</span>
+                            <span>1</span>
+                            <span>+</span>
                         </div>
-                        <div class="content__card-item">
-                            <div class="content__card-amount">
-                                <div>6999 ₽</div>
-                                <span>6999 ₽</span>
-                                <span>x</span>
-                                <span>1 шт</span>
-                            </div>
-                            <div class="icon-block icon-block_favorits icon-block_red icon-block_none">
-                                <div class="icon-block__img"></div>
-                                <div class="icon-block__del">Удалить</div>
-                            </div>
-                            <!-- для адаптива -->
-                            <div class="content__card-bth">
-                                <button>Добавить в избранное</button>
-                            </div>
-                            <!-- для адаптива -->
+                        <span class="content__card-sum">6999 ₽</span>
+                        <div class="content__card-amount">
+                            <span>6999 ₽</span>
+                            <span>x</span>
+                            <span>1 шт</span>
                         </div>
+                        <!-- для адаптива -->
+                        <button class="button__select button__select_active">
+                            <div class="button__select-img"></div>
+                            <span class="button__select-text">Добавить в избраное</span>
+                        </button>
+                        <button class="button__del">
+                            <span class="button__del-img"></span>
+                            <span class="button__del-text">Удалить</span>
+                        </button>
+                        <!-- для адаптива -->
                     </div>
-                    <!-- для адаптива -->
-                    <div class="content__card-close"></div>
-                    <!-- для адаптива -->
                 </div>
                 <div class="content-purchases">
-                    <div class="content-purchases__group">
-                        <div class="content-purchases__promo">Промокод</div>
-                        <div class="content-purchases__input">
-                            <input type="text" name="promo">
-                        </div>
-                    </div>
+                    <button class="content-purchases__promo">Промокод</button>
                     <!-- для адаптива -->
-                    <div class=" content__input">
+                    <div class="content__input content__input_active">
                         <input type="text" placeholder="Введите ваш промокод" class="content__input-promo"
                             id="input__promo">
                         <label for="input__promo">
                             <button class="content__input-bth">OK</button>
                         </label>
-                    </div>
-                    <div class="content-purchases__rebate">
-                        <p>Для Вас скидка 20%</p>
-                        <p>на все модели не уаствующие в акциях</p>
                     </div>
                     <!-- для адаптива -->
                     <div class=" content-purchases__flex">
@@ -236,20 +180,16 @@
                             <div>500 ₽</div>
                         </div>
                         <div class="content-purchases__total">
-                            <div>ИТОГО:</div>
+                            <div class="cotent-purchases__total-el">ИТОГО:</div>
                             <div>6299 ₽</div>
                         </div>
                         <button class="bth bth_green">
                             <div>ОФОРМИТЬ ЗАКАЗ</div>
                         </button>
-                        <div class="content-purchases__offer">
-                            Нажимая на кнопку «Формить заказ», вы принимаете условия <a href="">Публичной оферты</a>
+                        <div class="content-purchases__offer"></div>
+                        <div class="content-purchases__ref">
+                            <a href="" class="content-purchases__link"></a>
                         </div>
-                        <!-- для адаптива -->
-                        <div class="content-purchase__button">
-                            <button class="content-purchase__bth">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-                        </div>
-                        <!-- для адаптива -->
                     </div>
                 </div>
                 <div class="content__reference">
@@ -285,11 +225,12 @@
                         </div>
                         <div class="icon-block__img icon-block__img_right"></div>
                     </div>
-                    <div class="content__reference-el">
-                        <button class="bth bth_bottom">
-                            <div>ПРОДОЛЖИТЬ ПОКУПКИ</div>
-                        </button>
+                    <!-- для адаптива  -->
+                    <div class="content__reference-buttons">
+                        <button class="bth content__reference-bth1">ПЕРЕЙТИ К ОФОРМЛEНИЮ</button>
+                        <button class="bth content__reference-bth2">продолжить покупки</button>
                     </div>
+                    <!-- для адаптива  -->
                 </div>
             </div>
         </div>
@@ -298,48 +239,32 @@
                 <div class="footer-top__wrap container">
                     <div class="footer-top__text">Нужна помощь с заказом?</div>
                     <div class="footer-top__phone">
-                        <span>+7 800 800 88 88</span>
+                        <span class="footer-top__mobile">+7 800 800 88 88</span>
                         <span>+7 495 698 63 58</span>
-                    </div>
-                    <div class="location__group location__group_invisible ">
-                        <div class="location__geo">
-                            <img src="image/icon/geo.png" alt="" class="image">
-                        </div>
-                        <a href="" class="location__link">г.Москва.</a>
-                        <a href="" class="location__link">Магазин в москве</a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
+            <div class=" footer-bottom">
                 <div class="footer-bottom__wrap container">
-                    <div class="footer-bottom__item ">
+                    <div class="footer-bottom__lists">
                         <div class="footer-bottom__list footer-bottom__list_heading">КОМПАНИЯ
-                            <ul class="footer-bottom__heading">
-                                <li><a href="" class="footer-bottom__li">История</a> </li>
-                                <li><a href="" class="footer-bottom__li">Карьера</a> </li>
-                                <li><a href="" class="footer-bottom__li">Пресса</a> </li>
-                                <li><a href="" class="footer-bottom__li">Франшиза</a> </li>
-                                <li><a href="" class="footer-bottom__li">Контакты</a> </li>
+                            <ul>
+                                <li class="footer-bottom__li"><a href="" class="footer-bottom__el">История</a> </li>
+                                <li class="footer-bottom__li"><a href="" class="footer-bottom__el">Карьера</a> </li>
+                                <li class="footer-bottom__li"><a href="" class="footer-bottom__el">Пресса</a> </li>
+                                <li class="footer-bottom__li"><a href="" class="footer-bottom__el">Франшиза</a> </li>
+                                <li class="footer-bottom__li"><a href="" class="footer-bottom__el">Контакты</a> </li>
                             </ul>
                         </div>
                         <div class="footer-bottom__list footer-bottom__list_heading">СЕРВИС
-                            <ul class="footer-bottom__heading">
-                                <li><a href="" class="footer-bottom__li">Доставка</a> </li>
-                                <li><a href="" class="footer-bottom__li">Оплата</a> </li>
-                                <li><a href="" class="footer-bottom__li">Возврат</a> </li>
-                                <li><a href="" class="footer-bottom__li">Гид по размерам</a></li>
+                            <ul>
+                                <li class="footer-bottom__li"><a href="" class="footer-bottom__el">Доставка</a> </li>
+                                <li class="footer-bottom__li"><a href="" class="footer-bottom__el">Оплата</a> </li>
+                                <li class="footer-bottom__li"><a href="" class="footer-bottom__el">Возврат</a> </li>
+                                <li class="footer-bottom__li"><a href="" class="footer-bottom__el">Гид по размерам</a>
+                                </li>
                             </ul>
                         </div>
-                        <!-- для адаптива -->
-                        <div class="footer-bottom__adapt">
-                            <div class="footer-bottom__adapt-info">
-                                <div>© 2017 Dreams</div>
-                                <div>Все права защищены</div>
-                            </div>
-                            <a href="" class="footer-bottom__adapt-link">Пользовательское соглашение</a>
-                            <a href="" class="footer-bottom__adapt-link">Политика конфедациальности</a>
-                        </div>
-                        <!-- для адаптива -->
                     </div>
                     <div class="footer-bottom__input-gpoup">
                         <div class="footer-bottom__heading footer-bottom__heading_margin">УЗНАЙТЕ ПЕРВЫМИ О
@@ -348,26 +273,30 @@
                             DREAMS</div>
                         <input type="text" name="mail" placeholder="Ваш e-mail" class="input-group__item">
                     </div>
-                    <div class="footer-bottom__item footer-bottom__item_del">
+                    <div class="footer-bottom__box">
                         <div class="footer-bottom__info">
-                            <div class="footer-bottom__heading ">DREAMS
-                                В СОЦИАЛЬНЫХ СЕТЯХ</div>
-                            <div class="footer-bottom__social">
-                                <a href=""><img src="image/icon/Insta.png" alt=""></a>
-                                <a href=""><img src="image/icon/Fb.png" alt=""></a>
-                                <a href=""><img src="image/icon/VK.png" alt=""></a>
-                                <a href=""><img src="image/icon/Twitter.png" alt=""></a>
-                            </div>
-                            <div class="footer-bottom__heading footer-bottom__heading_top">СПОСОБЫ ОПЛАТЫ</div>
-                            <div class="footer-bottom__card">
-                                <img src="image/icon/card.jpg" alt="" class="image">
-                            </div>
-                            <div class="footer-bottom__text">Вы можете оплатить покупки наличными при получении
-                                или
-                                выбрать <a href="" class="footer-bottom__link">другой способ оплаты</a></div>
+                            <div class="footer-bottom__heading ">DREAMS В СОЦИАЛЬНЫХ СЕТЯХ</div>
+                            <div class="footer-bottom__info-el footer-bottom__info-el_border">© 2017 Dreams</div>
+                            <div class="footer-bottom__info-el">Все права защищены</div>
                         </div>
+                        <div class="footer-bottom__social">
+                            <a href="" class="footer-bottom__social-el"><img src="image/icon/Insta.png" alt=""></a>
+                            <a href="" class="footer-bottom__social-el"><img src="image/icon/Fb.png" alt=""></a>
+                            <a href="" class="footer-bottom__social-el"><img src="image/icon/VK.png" alt=""></a>
+                            <a href="" class="footer-bottom__social-el"><img src="image/icon/Twitter.png" alt=""></a>
+                        </div>
+                        <div class="footer-bottom__heading footer-bottom__heading_top">СПОСОБЫ ОПЛАТЫ
+                        </div>
+                        <div class="footer-bottom__card">
+                            <img src="image/icon/card.jpg" alt="" class="image">
+                        </div>
+                        <div class="footer-bottom__text">Вы можете оплатить покупки наличными при получении или выбрать
+                            <a href="" class="footer-bottom__link">другой способ оплаты</a>
+                        </div>
+                        <a href="" class="footer-bottom__link-invisible">Пользовательское
+                            соглашение</a>
+                        <a href="" class="footer-bottom__link-invisible">Политика конфедациальности</a>
                     </div>
-
                 </div>
             </div>
         </footer>
