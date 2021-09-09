@@ -16,14 +16,17 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "2.26.5",
-    "gulp": "4.0.2",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "6.1.0",
     "gulp-clean-css": "4.2.0",
     "gulp-concat": "2.6.1",
     "gulp-rm": "2.0.0",
-    "gulp-sass": "4.0.2",
+    "gulp-sass": "^4.1.1",
     "gulp-sass-glob": "1.0.9",
     "gulp-sourcemaps": "2.6.5",
     "node-sass": "4.12.0"
+  },
+  "dependencies": {
+    "sass": "^1.39.0"
   }
 }
